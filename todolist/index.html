@@ -98,10 +98,7 @@
                         /*Todo 목록에 존재하는 자식노드 요소 개수 만큼 for문을 작동*/
                         for (var i =0; i < todoList.childNodes.length; i++)
                         {
-                            /*for문으로 돌려지는 자식노드 요소값을 trim으로 좌우 공백제거 후, 새로운 배열(todos) 뒷부분에 추가*/
-                            console.log(" test :" + todoList.childNodes[i].textContent);
                             todos.push(todoList.childNodes[i].textContent);
-                            console.log(todos);
                         } 
                         localStorage.setItem('todoList',JSON.stringify(todos));//추가된 내용을 var->String형태로 변환?
                     }
